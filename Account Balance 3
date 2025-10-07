@@ -1,0 +1,27 @@
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int bal=sc.nextInt();
+        int a=sc.nextInt();
+        switch(a){
+            case 1:
+                int depos=sc.nextInt();
+        System.out.println(bal+depos);
+        break;
+          case 2:
+                int witdra=sc.nextInt();
+                if(witdra>bal){
+        System.out.println("Insufficient Balance");
+                }
+                else{
+                        System.out.println(bal-witdra);
+  }
+                break;
+            default:
+                        System.out.println("Invalid Input");
+
+        }
+    }
+}
